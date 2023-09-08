@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  counter-reset: section;
+}
+
+* {
+  box-sizing: border-box;
+  margin: unset;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3vw;
+  color: #fff;
+  background: hsl(220, 20%, 17%);
+  padding: 4em 5%;
+  margin-bottom: 6rem;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  counter-increment: section;
+}
+section:not(:last-child) {
+  margin-bottom: 5rem;
+}
+section .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+section .col {
+  width: 45%;
+  background: #f4f5f6;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.0666666667);
+}
+section .col:before {
+  content: counter(section);
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  font-weight: bold;
+  width: 48px;
+  height: 48px;
+  border-radius: 40px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+section .col h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #24272b;
+}
+section .col p {
+  font-size: 14px;
+  color: #4a525a;
+  line-height: 1.5;
+}
+section:nth-of-type(odd) .col {
+  margin-left: auto;
+}
+section:nth-of-type(odd) .col:before {
+  left: -18%;
+}
+section:nth-of-type(even) .col:before {
+  right: -18%;
+}
+
+main {
+  position: relative;
+  margin-bottom: 50vh;
+}
+
+.scroll-container {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 2px);
+  height: calc(100% - 200px);
+  width: 4px;
+  background: #e9ebed;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  z-index: -1;
+}
+
+.scroll-plane {
+  width: 4px;
+  height: calc(50vh - 0px);
+  background: #3eb39d;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}/*# sourceMappingURL=styles.css.map */

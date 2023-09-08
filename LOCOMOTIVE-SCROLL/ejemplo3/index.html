@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo1</title>
+    <link rel="stylesheet" href="./css/locomotive-scroll.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+
+    <div data-scroll-container>
+        <section data-scroll-section>
+            <h4>This is</h4>
+            <h1>Studio by interior</h1>
+            <div class="container">
+                <div class="getting-started">
+                    <h4>Feel the style</h4>
+                    <p>We create ergonomic <br>spaces with individual designs.</p>
+                    <button>Get Started</button>
+                </div>
+                <div class="image-holder">
+                    <img src="https://images.unsplash.com/photo-1537726235470-8504e3beef77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" data-scroll-section id="pin">
+            <div class="image-pop" id="one" data-scroll data-scroll-sticky data-scroll-target="#pin"
+                data-scroll-speed="3">
+                <img src="https://images.unsplash.com/photo-1499955085172-a104c9463ece?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                    alt="">
+            </div>
+            <div class="image-pop" id="two" data-scroll data-scroll-speed="7">
+                <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                    alt="">
+            </div>
+            <div class="image-pop" id="three" data-scroll data-scroll-speed="10">
+                <img src="https://images.unsplash.com/photo-1494203484021-3c454daf695d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                    alt="">
+            </div>
+            <div class="image-pop" id="four" data-scroll data-scroll-speed="6">
+                <img src="https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-1.2.1&auto=format&fit=crop&w=1087&q=80"
+                    alt="">
+            </div>
+            <div class="image-pop" id="five" data-scroll data-scroll-speed="6">
+                <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                    alt="">
+            </div>
+        </section>
+    </div>
+
+    <script src="./js/locomotive-scroll.js"></script>
+    <script>
+        const scroller = new LocomotiveScroll({
+            el: document.querySelector("[data-scroll-container]"),
+            smooth: true
+        });
+    </script>
+</body>
+
+</html>
