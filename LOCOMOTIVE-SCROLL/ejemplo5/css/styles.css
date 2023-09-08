@@ -1,0 +1,20 @@
+@charset "UTF-8";
+body {
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* FOOTER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.page-footer a {
+  margin-left: 4px;
+}/*# sourceMappingURL=styles.css.map */
