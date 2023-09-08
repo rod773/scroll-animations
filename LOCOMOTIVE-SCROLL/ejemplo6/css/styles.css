@@ -1,0 +1,33 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  color: #fff;
+  padding: 1rem;
+}
+section#section-1 {
+  background-color: darkcyan;
+}
+section#section-2 {
+  background-color: darkgoldenrod;
+}
+section div {
+  width: 20rem;
+}
+
+header {
+  width: 100vw;
+  color: #fff;
+  background-color: #000;
+  position: sticky;
+  z-index: 1;
+}
+
+.sticky {
+  background-color: #000;
+  color: #fff;
+  position: sticky;
+  z-index: 1;
+}/*# sourceMappingURL=styles.css.map */

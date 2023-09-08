@@ -1,0 +1,41 @@
+// https://greensock.com/forums/topic/28551-locomotive-scroll-data-scroll-sticky-not-working/?tab=comments#comment-141472
+body {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    color: #fff;
+
+    padding: 1rem;
+
+    &#section-1 {
+        background-color: darkcyan;
+    }
+    &#section-2 {
+        background-color: darkgoldenrod;
+    }
+
+    div {
+        width: 20rem;
+    }
+}
+
+// sticky elements.
+header {
+    width: 100vw;
+
+    color: #fff;
+    background-color: #000;
+
+    position: sticky;
+    z-index: 1;
+}
+
+.sticky {
+    background-color: #000;
+    color: #fff;
+
+    position: sticky;
+    z-index: 1;
+}
