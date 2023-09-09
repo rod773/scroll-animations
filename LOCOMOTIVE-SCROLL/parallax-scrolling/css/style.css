@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 8vw;
+  letter-spacing: 2px;
+}
+
+.bgOne {
+  background: url(../images/sm_b3g.jpg) center center no-repeat;
+}
+
+.parallax {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.parallax h1 {
+  color: #e6e6e6;
+}
+
+.bgImg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgImg img {
+  display: block;
+  margin-top: auto;
+  width: 70%;
+}
+
+.bgTwo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #0a2431;
+  padding-top: 6px;
+}
+
+.bgTwo .item {
+  width: 45%;
+}
+
+.bgTwo .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.bgTwo .item h4 {
+  font-size: 20px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.bgTwo .item p {
+  padding-right: 50px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.section_3 {
+  width: 100%;
+  height: 100vh;
+  background-color: #121d3f;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 8px;
+}
+
+.section_3 .scrolling_text {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+}
+
+.section_3 .scrolling_text img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.section_3 .scrolling_text .scroll_text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 500px;
+  transform: translate(-50%, -50%);
+}
+
+.section_3 .scrolling_text .scroll_text p {
+  font-size: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #4d94ff;
+}
+
+.section_3 .scrolling_text .scroll_text p + p {
+  margin-top: 20px;
+}
+
+.section_4 {
+  width: 100%;
+  height: 100vh;
+  background-color: #80ff80;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section_4 h1 {
+  color: #003300;
+  display: block;
+}/*# sourceMappingURL=style.css.map */
